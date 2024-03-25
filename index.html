@@ -1,0 +1,11 @@
+//button spiner
+const spin = document.getElementById("spin");
+    const btn = document.getElementById("btn");
+    const indicator= document.getElementById("indicator-label");
+
+    btn.addEventListener("click", function() {
+        indicator.classList.add("d-none");
+        btn.disabled = true;
+        spin.classList.remove("d-none");
+        document.getElementById("submitForm").submit();
+    });
